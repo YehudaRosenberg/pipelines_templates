@@ -3,7 +3,7 @@ resources:
     type: GitRepo
     configuration:
       gitProvider: github_integration                       # <-- replace with your integration
-      path: yehudarosenberg/pipelines_templates    # <-- replace with your repository name
+      path: YehudaRosenberg/pipelines_templates    # <-- replace with your repository name
       branches:
         include: master
       buildOn:
