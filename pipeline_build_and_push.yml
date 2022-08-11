@@ -9,14 +9,14 @@ resources:
       buildOn:
         commit: true
 
-  - name: new_image_name
-    type: Image
-    configuration:
-      registry: artifactory_integration                                # <-- replace with your     MyArtifactoryifactory integration
-      sourceRepository: main1-docker-alpine-virt               # <-- required if registry is     MyArtifactoryifactory
-      imageName: docker.artprod.mycompany.com/baseimage # < -- replace with your image path and name
-      imageTag: latest
-      autoPull: true
+  # - name: new_image_name
+  #   type: Image
+  #   configuration:
+  #     registry: artifactory_integration                                # <-- replace with your     MyArtifactoryifactory integration
+  #     sourceRepository: main1-docker-alpine-virt               # <-- required if registry is     MyArtifactoryifactory
+  #     imageName: docker.artprod.mycompany.com/baseimage # < -- replace with your image path and name
+  #     imageTag: latest
+  #     autoPull: true
       
 
 pipelines:
