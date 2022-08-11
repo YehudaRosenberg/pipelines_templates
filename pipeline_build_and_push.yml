@@ -28,7 +28,7 @@ pipelines:
           affinityGroup: dbp_group
           dockerFileLocation: .
           dockerFileName: Dockerfile
-          dockerImageName: avigdor.jfrog.io/artifactory/main1-docker-alpine-local/  # replace with your image path and name
+          dockerImageName: avigdor.jfrog.io/ui/repos/tree/General/main1-docker-alpine-local  # replace with your image path and name
           dockerImageTag: ${run_number}
           inputResources:
             - name: dbp_repo
