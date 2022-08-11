@@ -9,7 +9,7 @@ resources:
       buildOn:
         commit: true
 
-  - name: liav_imagee
+  - name: liav_imageee
     type: Image
     configuration:
       registry: artifactory_integration                                # <-- replace with your     MyArtifactoryifactory integration
@@ -45,4 +45,4 @@ pipelines:
           inputSteps:
             - name: docker_build
           outputResources:
-            - name: liav_imagee
+            - name: liav_imageee
