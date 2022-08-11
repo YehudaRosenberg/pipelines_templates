@@ -14,7 +14,7 @@ resources:
     configuration:
       registry: artifactory_integration                                # <-- replace with your     MyArtifactoryifactory integration
       sourceRepository: main1-docker-alpine-virt               # <-- required if registry is     MyArtifactoryifactory
-      imageName: avigdor.jfrog.io/artifactory/main1-docker-alpine-virt/shimon # < -- replace with your image path and name
+      imageName: docker.artprod.mycompany.com/baseimage # < -- replace with your image path and name
       imageTag: latest
       autoPull: true
       
