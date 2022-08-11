@@ -13,8 +13,8 @@ resources:
     type: Image
     configuration:
       registry: artifactory_integration                                # <-- replace with your     MyArtifactoryifactory integration
-      sourceRepository: main1-docker-alpine-virt               # <-- required if registry is     MyArtifactoryifactory
-      imageName: docker.artprod.mycompany.com/baseimage # < -- replace with your image path and name
+      sourceRepository: main1-docker-alpine-local               # <-- required if registry is     MyArtifactoryifactory
+      imageName: avigdor.jfrog.io/artifactory/main1-docker-alpine-local/shimon # < -- replace with your image path and name
       imageTag: latest
       autoPull: true
       
@@ -28,7 +28,7 @@ pipelines:
           affinityGroup: dbp_group
           dockerFileLocation: .
           dockerFileName: Dockerfile
-          dockerImageName: avigdor.jfrog.io/artifactory/main1-docker-alpine-virt/shimon  # replace with your image path and name
+          dockerImageName: avigdor.jfrog.io/artifactory/main1-docker-alpine-local/shimon  # replace with your image path and name
           dockerImageTag: ${run_number}
           inputResources:
             - name: dbp_repo
