@@ -9,7 +9,7 @@ resources:
       buildOn:
         commit: true
 
-  - name: liav_imageee
+  - name: yehuda_image
     type: Image
     configuration:
       registry: artifactory_integration                                # <-- replace with your     MyArtifactoryifactory integration
@@ -28,7 +28,7 @@ pipelines:
           affinityGroup: dbp_group
           dockerFileLocation: .
           dockerFileName: Dockerfile
-          dockerImageName: avigdor.jfrog.io/main1-docker-alpine-local/shimon  # replace with your image path and name
+          dockerImageName: YehudaRosenberg/jfrog-pipelines-docker-sample  # replace with your image path and name
           dockerImageTag: ${run_number}
           inputResources:
             - name: dbp_repo
@@ -45,4 +45,4 @@ pipelines:
           inputSteps:
             - name: docker_build
           outputResources:
-            - name: liav_imageee
+            - name: yehuda_image
